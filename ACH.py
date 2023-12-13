@@ -20,7 +20,7 @@ st.title("Stax ACH Report Builder")
 
 st.write("ACH Rejects MODE CSV Download  [link](https://app.mode.com/editor/fattmerchant/reports/666e0d6be67c/queries/97c542996f64)")
 
-image = open('/Users/ryannolan/Desktop/python-test/Carlos_App/mode_instructions.png', 'rb').read()
+image = open('mode_instructions.png', 'rb').read()
 st.image(image, caption='For 8 digit MID add a 0, otherwise post mids in this section with single quote and comma format', use_column_width=True)
 
 engine_df = st.file_uploader("Upload ACH Rejects MODE CSV Download CSV file", type=['csv'], key='StaxEngine')
